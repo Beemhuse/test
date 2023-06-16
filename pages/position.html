@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        ul{
+            border: solid black;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            background-color:#000;
+        }
+        ul>li>a{
+            text-decoration: none;
+color: aliceblue;
+
+        }
+        .card{
+            height: 40vh;
+            border: solid green;
+        }
+        .item{
+            /* content: 'positioned element'; */
+            height: 30vh;
+            border: solid blue;
+            border-radius: 50%;
+            height: 100px;
+            position: fixed;
+            padding: 20px;
+            /* right: -400px; */
+            /* top: 500px; */
+            right:20px;
+            bottom: 50px;
+            width: 100px;
+
+        }
+        .container{
+            height: 100vh;
+            border: solid red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="../index.html">Home</a></li>
+
+    </ul>
+    <h1>Position property page PAGE</h1>
+
+    <div class="card">
+        Child one
+    </div>
+
+    <div class="item">
+Element to be positioned
+    </div>
+
+
+    <div class="container">
+Child two
+    </div>
+</body>
+</html>
